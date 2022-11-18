@@ -1,0 +1,52 @@
+{
+	"name": "cpp-compile",
+	"displayName": "cpp-compile",
+	"description": "Simple one-click debug for C++.",
+	"version": "0.0.2",
+	"publisher": "tchojnacki",
+	"engines": {
+		"vscode": "^1.20.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:cpp"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "cpp-compile settings",
+			"properties": {
+				"cppCompile.flags": {
+					"type": "string",
+					"default": "",
+					"description": "Additional g++ flags."
+				}
+			}
+		}
+	},
+	"main": "./extension",
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
+		"eslint": "^4.11.0",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"id": "7ffdbbf9-f503-4107-9790-14c1f9f20016",
+		"publisherId": "732d1cfa-4910-4d97-a539-2f5d5527ad8f",
+		"publisherDisplayName": "Tomasz Chojnacki",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1667238336773,
+		"preRelease": false
+	}
+}
